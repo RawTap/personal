@@ -1,4 +1,3 @@
-# lista=int(input("Ingrese los numeros que desea promediar separados por una coma")).
 def promedio(lista):
     suma = 0
     if len(lista) == 0:
