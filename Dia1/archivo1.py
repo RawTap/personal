@@ -23,3 +23,32 @@ def contar_vocales(texto):
 
 # assert contar_vocales("Hola") == 2
 # assert contar_vocales("Claude") == 3
+
+
+def encontrar_maximo(lista):
+    maximo = lista[0]
+    for i in lista:
+        if i > maximo:
+            maximo = i
+    return maximo
+
+
+assert encontrar_maximo([3, 9, 1, 7, 5, 12, 4, 4]) == 12
+assert encontrar_maximo([-5, 8, -2, 10, 16, 7, 100, 5]) == 100
+
+
+def es_palindromo(texto):
+    texto = texto.lower()
+    return texto == texto[::-1]
+
+
+def es_palindromo2(texto):
+    texto = texto.lower()
+    palindromo = ""
+    for i in texto:
+        palindromo = i + palindromo
+    return texto == palindromo
+
+
+assert es_palindromo2("Hola") == False
+assert es_palindromo("Oso") == True
