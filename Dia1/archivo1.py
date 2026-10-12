@@ -35,6 +35,7 @@ def encontrar_maximo(lista):
 
 assert encontrar_maximo([3, 9, 1, 7, 5, 12, 4, 4]) == 12
 assert encontrar_maximo([-5, 8, -2, 10, 16, 7, 100, 5]) == 100
+assert encontrar_maximo([-5, -2, -9]) == -2
 
 
 def es_palindromo(texto):
